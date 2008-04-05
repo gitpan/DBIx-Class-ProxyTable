@@ -5,6 +5,7 @@ use base 'DBIx::Class';
 use Carp::Clan qw/^DBIx::Class/;
 use UNIVERSAL::require;
 
+our $VERSION = '0.01';
 use DBIx::Class::ResultSet;
 
 {
