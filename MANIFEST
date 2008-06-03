@@ -17,7 +17,6 @@ inc/Test/Builder/Module.pm
 inc/Test/Declare.pm
 inc/Test/More.pm
 lib/DBIx/Class/ProxyTable.pm
-lib/DBIx/Class/ProxyTable/AutoCreateTable.pm
 lib/DBIx/Class/ProxyTable/AutoCreateTable/mysql.pm
 lib/DBIx/Class/ProxyTable/AutoCreateTable/SQLite.pm
 LICENSE

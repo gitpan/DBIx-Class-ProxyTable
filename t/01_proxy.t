@@ -57,6 +57,6 @@ describe 'proxy test' => run {
     };
     cleanup {
         drop_database;
-    }
+    };
 };
 

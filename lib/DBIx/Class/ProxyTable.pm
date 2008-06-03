@@ -5,7 +5,7 @@ use base 'DBIx::Class';
 use Carp::Clan qw/^DBIx::Class/;
 use UNIVERSAL::require;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 use DBIx::Class::ResultSet;
 
 {
@@ -20,7 +20,7 @@ use DBIx::Class::ResultSet;
     sub _auto_create_table {
         my ($self, $new_table) = @_;
 
-        my $driver = $self->result_source->schema->storage->_dbh->{Driver}->{Name};
+        my $driver = $self->result_source->schema->storage->dbh->{Driver}->{Name};
         my $module = 'DBIx::Class::ProxyTable::AutoCreateTable::'. $driver;
         $module->use or die $@;
         my $sql = $module->_get_table($self, $new_table);

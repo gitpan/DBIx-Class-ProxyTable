@@ -1,7 +1,6 @@
 package DBIx::Class::ProxyTable::AutoCreateTable::mysql;
 use strict;
 use warnings;
-use base 'DBIx::Class::ProxyTable::AutoCreateTable';
 
 sub _get_table {
     my ($class, $rs, $new_table) = @_;
